@@ -16,6 +16,7 @@ package com.amazonaws.services.s3.model;
 
 import java.io.File;
 import java.io.InputStream;
+import java.io.Serializable;
 
 import com.amazonaws.AmazonWebServiceRequest;
 
@@ -79,7 +80,7 @@ import com.amazonaws.AmazonWebServiceRequest;
  * @see PutObjectRequest#PutObjectRequest(String, String, File)
  * @see PutObjectRequest#PutObjectRequest(String, String, InputStream, ObjectMetadata)
  */
-public class PutObjectRequest extends AmazonWebServiceRequest {
+public class PutObjectRequest extends AmazonWebServiceRequest implements Serializable{
 
     /**
      * The name of an existing bucket, to which this request will upload a new
