@@ -14,6 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ import com.amazonaws.services.s3.internal.ServerSideEncryptionResult;
  * user-supplied metadata, as well as the standard HTTP headers that Amazon S3
  * sends and receives (Content-Length, ETag, Content-MD5, etc.).
  */
-public class ObjectMetadata implements ServerSideEncryptionResult, ObjectExpirationResult, ObjectRestoreResult {
+public class ObjectMetadata implements ServerSideEncryptionResult, ObjectExpirationResult, ObjectRestoreResult,Serializable {
 
     /*
      * TODO: Might be nice to get as many of the internal use only methods out
