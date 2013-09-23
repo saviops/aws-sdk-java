@@ -14,6 +14,8 @@
  */
 package com.amazonaws.services.s3.model;
 
+import java.io.Serializable;
+
 /**
  * Specifies constants defining a canned access control list.
  * <p>
@@ -26,7 +28,7 @@ package com.amazonaws.services.s3.model;
  * 
  * @see AccessControlList
  */
-public enum CannedAccessControlList {
+public enum CannedAccessControlList implements Serializable {
     /**
      * Specifies the owner is granted {@link Permission#FullControl}. No one else has access rights.
      * <p>
